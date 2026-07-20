@@ -1,0 +1,84 @@
+/* ==========================================
+   404 PAGE
+========================================== */
+
+.error-page{
+
+    min-height:100vh;
+
+    display:flex;
+    flex-direction:column;
+    justify-content:center;
+    align-items:center;
+
+    text-align:center;
+
+    padding:40px;
+
+}
+
+.error-page h1{
+
+    font-size:150px;
+
+    color:#4DA3FF;
+
+    margin-bottom:10px;
+
+    text-shadow:0 0 30px rgba(77,163,255,.5);
+
+}
+
+.error-page h2{
+
+    font-size:36px;
+
+    margin-bottom:20px;
+
+}
+
+.error-page p{
+
+    max-width:600px;
+
+    color:#A9B3C1;
+
+    line-height:1.7;
+
+    margin-bottom:45px;
+
+}
+
+/* Home Button */
+
+.error-page a{
+
+    display:inline-block;
+
+    padding:15px 35px;
+
+    background:linear-gradient(135deg,#00C6FF,#0072FF);
+
+    color:#FFFFFF;
+
+    text-decoration:none;
+
+    font-weight:600;
+
+    font-size:17px;
+
+    border-radius:50px;
+
+    transition:all .3s ease;
+
+    box-shadow:0 10px 25px rgba(0,170,255,.35);
+
+}
+
+.error-page a:hover{
+
+    transform:translateY(-4px);
+
+    box-shadow:0 18px 35px rgba(0,170,255,.55);
+
+}

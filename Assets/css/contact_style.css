@@ -1,0 +1,267 @@
+/* ==========================================
+   CONTACT PAGE
+========================================== */
+
+body{
+    margin:0;
+    font-family:'Poppins',sans-serif;
+    background:#0B0F19;
+    color:#ffffff;
+}
+
+/* ==========================
+   NAVBAR
+========================== */
+
+.navbar{
+
+    position:fixed;
+    top:0;
+    left:0;
+
+    width:100%;
+    height:80px;
+
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+
+    padding:0 40px;
+
+    background:rgba(10,15,25,.8);
+    backdrop-filter:blur(15px);
+
+    box-sizing:border-box;
+
+    z-index:1000;
+}
+
+.logo a{
+
+    text-decoration:none;
+    color:#4DA3FF;
+
+    font-size:30px;
+    font-weight:700;
+
+    transition:.3s;
+
+}
+
+.logo a:hover{
+
+    color:#00C8FF;
+
+}
+
+.nav-links{
+
+    list-style:none;
+
+    display:flex;
+    gap:15px;
+
+    margin:0;
+    padding:0;
+
+}
+
+.nav-links a{
+
+    text-decoration:none;
+
+    color:white;
+
+    padding:10px 20px;
+
+    border-radius:30px;
+
+    font-weight:600;
+
+    transition:.3s;
+
+}
+
+.nav-links a:hover{
+
+    background:linear-gradient(135deg,#00C6FF,#0072FF);
+
+    box-shadow:0 0 20px rgba(0,170,255,.35);
+
+}
+
+/* ==========================
+   CONTACT SECTION
+========================== */
+
+.contact{
+
+    width:90%;
+    max-width:1100px;
+
+    margin:auto;
+
+    padding-top:150px;
+    padding-bottom:100px;
+
+    text-align:center;
+
+}
+
+.contact h1{
+
+    font-size:56px;
+
+    margin-bottom:20px;
+
+}
+
+.contact p{
+
+    color:#A9B3C1;
+
+    font-size:18px;
+
+    max-width:700px;
+
+    margin:auto auto 60px;
+
+}
+
+/* ==========================
+   GRID
+========================== */
+
+.contact-grid{
+
+    display:grid;
+
+    grid-template-columns:repeat(auto-fit,minmax(300px,1fr));
+
+    gap:30px;
+
+}
+
+/* ==========================
+   CARD
+========================== */
+
+.contact-card{
+
+    background:#161B22;
+
+    padding:40px 30px;
+
+    border-radius:20px;
+
+    border:1px solid rgba(255,255,255,.05);
+
+    transition:.35s;
+
+}
+
+.contact-card:hover{
+
+    transform:translateY(-10px);
+
+    box-shadow:0 15px 40px rgba(0,170,255,.25);
+
+}
+
+.contact-card h2{
+
+    color:#4DA3FF;
+
+    margin-bottom:25px;
+
+}
+
+/* ==========================
+   BUTTON
+========================== */
+
+.contact-card a{
+
+    display:inline-block;
+
+    text-decoration:none;
+
+    color:white;
+
+    background:linear-gradient(135deg,#00C6FF,#0072FF);
+
+    padding:14px 28px;
+
+    border-radius:50px;
+
+    font-weight:600;
+
+    transition:.3s;
+
+    box-shadow:0 8px 25px rgba(0,170,255,.35);
+
+}
+
+.contact-card a:hover{
+
+    transform:translateY(-4px);
+
+    box-shadow:0 15px 35px rgba(0,170,255,.55);
+
+}
+
+/* ==========================
+   FOOTER
+========================== */
+
+footer{
+
+    text-align:center;
+
+    padding:35px;
+
+    color:#777;
+
+    border-top:1px solid rgba(255,255,255,.05);
+
+}
+
+/* ==========================
+   MOBILE
+========================== */
+
+@media(max-width:768px){
+
+    .navbar{
+
+        padding:0 20px;
+
+    }
+
+    .logo a{
+
+        font-size:24px;
+
+    }
+
+    .nav-links{
+
+        gap:8px;
+
+    }
+
+    .nav-links a{
+
+        padding:8px 14px;
+
+        font-size:14px;
+
+    }
+
+    .contact h1{
+
+        font-size:42px;
+
+    }
+
+}

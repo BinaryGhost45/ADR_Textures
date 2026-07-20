@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://binaryghost45.github.io/Unity_Store/sitemap.xml

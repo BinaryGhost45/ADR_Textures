@@ -1,0 +1,360 @@
+/* ==========================================
+   GLOBAL
+========================================== */
+
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+}
+
+html{
+    scroll-behavior:smooth;
+}
+
+body{
+
+    font-family:'Poppins',sans-serif;
+
+    background:#0B0F19;
+
+    color:#ffffff;
+
+}
+
+a{
+
+    text-decoration:none;
+
+    color:inherit;
+
+}
+
+/* ==========================================
+   NAVBAR
+========================================== */
+
+.navbar{
+
+    position:fixed;
+
+    top:0;
+    left:0;
+
+    width:100%;
+
+    height:80px;
+
+    display:flex;
+
+    justify-content:space-between;
+
+    align-items:center;
+
+    padding:0 40px;
+
+    background:rgba(11,15,25,.85);
+
+    backdrop-filter:blur(15px);
+
+    z-index:1000;
+
+}
+
+.logo a{
+
+    font-size:30px;
+
+    font-weight:700;
+
+    color:#4DA3FF;
+
+}
+
+.logo a:hover{
+
+    color:#00C6FF;
+
+}
+
+.nav-links{
+
+    list-style:none;
+
+    display:flex;
+
+    gap:15px;
+
+}
+
+.nav-links a{
+
+    padding:10px 20px;
+
+    border-radius:30px;
+
+    transition:.3s;
+
+}
+
+.nav-links a:hover{
+
+    background:linear-gradient(135deg,#00C6FF,#0072FF);
+
+    color:white;
+
+}
+
+/* ==========================================
+   HERO
+========================================== */
+
+.skills-hero{
+
+    width:90%;
+
+    max-width:900px;
+
+    margin:auto;
+
+    padding-top:160px;
+
+    text-align:center;
+
+}
+
+.skills-hero h1{
+
+    font-size:60px;
+
+    margin-bottom:25px;
+
+}
+
+.skills-hero p{
+
+    color:#B6C1CF;
+
+    font-size:18px;
+
+    line-height:1.8;
+
+}
+
+/* ==========================================
+   SECTION
+========================================== */
+
+.project-section{
+
+    width:90%;
+
+    max-width:1200px;
+
+    margin:80px auto;
+
+}
+
+.project-section h2{
+
+    font-size:38px;
+
+    margin-bottom:30px;
+
+}
+
+.project-section h3{
+
+    margin:40px 0 20px;
+
+    color:#4DA3FF;
+
+}
+
+.project-section p{
+
+    color:#B6C1CF;
+
+    line-height:1.9;
+
+    font-size:17px;
+
+}
+
+/* ==========================================
+   SKILL GRID
+========================================== */
+
+.feature-grid{
+
+    display:grid;
+
+    grid-template-columns:repeat(auto-fit,minmax(250px,1fr));
+
+    gap:20px;
+
+}
+
+.feature-card{
+
+    background:#161B22;
+
+    padding:25px;
+
+    border-radius:18px;
+
+    text-align:center;
+
+    transition:.3s;
+
+    border:1px solid rgba(255,255,255,.05);
+
+}
+
+.feature-card:hover{
+
+    transform:translateY(-8px);
+
+    box-shadow:0 15px 35px rgba(0,170,255,.25);
+
+}
+
+/* ==========================================
+   PHOTOGRAPHY ACCOUNT BUTTON
+========================================== */
+
+.project-section p a{
+
+    display:inline-block;
+
+    margin-top:20px;
+
+    padding:12px 25px;
+
+    background:linear-gradient(135deg,#00C6FF,#0072FF);
+
+    color:#fff;
+
+    border-radius:30px;
+
+    font-weight:600;
+
+    transition:.3s;
+
+}
+
+.project-section p a:hover{
+
+    transform:translateY(-3px);
+
+    box-shadow:0 12px 30px rgba(0,170,255,.4);
+
+}
+
+/* ==========================================
+   GALLERY
+========================================== */
+
+.gallery{
+
+    display:grid;
+
+    grid-template-columns:repeat(auto-fit,minmax(240px,1fr));
+
+    gap:25px;
+
+}
+
+.gallery img{
+
+    width:100%;
+
+    aspect-ratio:1/1;
+
+    object-fit:cover;
+
+    border-radius:18px;
+
+    background:#161B22;
+
+    transition:.35s;
+
+    cursor:pointer;
+
+    border:2px solid transparent;
+
+}
+
+.gallery img:hover{
+
+    transform:scale(1.04);
+
+    border-color:#00C6FF;
+
+    box-shadow:0 15px 35px rgba(0,170,255,.35);
+
+}
+
+/* ==========================================
+   FOOTER
+========================================== */
+
+footer{
+
+    margin-top:100px;
+
+    padding:40px;
+
+    text-align:center;
+
+    color:#888;
+
+    border-top:1px solid rgba(255,255,255,.08);
+
+}
+
+/* ==========================================
+   MOBILE
+========================================== */
+
+@media(max-width:768px){
+
+    .navbar{
+
+        padding:0 20px;
+
+    }
+
+    .logo a{
+
+        font-size:24px;
+
+    }
+
+    .nav-links{
+
+        gap:8px;
+
+    }
+
+    .nav-links a{
+
+        padding:8px 12px;
+
+        font-size:14px;
+
+    }
+
+    .skills-hero h1{
+
+        font-size:42px;
+
+    }
+
+    .project-section h2{
+
+        font-size:30px;
+
+    }
+
+}

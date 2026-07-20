@@ -1,0 +1,301 @@
+/* ===========================
+   Global Styles
+=========================== */
+
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+}
+
+body{
+    font-family:'Poppins',sans-serif;
+    background:#0B0F19;
+    color:white;
+    line-height:1.6;
+}
+
+/* ===========================
+   Navigation
+=========================== */
+
+.navbar{
+
+    width:100%;
+    padding:25px 8%;
+
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+
+    position:fixed;
+    top:0;
+
+    background:rgba(11,15,25,.7);
+    backdrop-filter:blur(12px);
+
+    z-index:1000;
+}
+
+.logo{
+
+    font-size:28px;
+    font-weight:700;
+    color:#4DA3FF;
+
+}
+
+.nav-links{
+
+    list-style:none;
+    display:flex;
+    gap:35px;
+
+}
+
+.nav-links a{
+
+    color:white;
+    text-decoration:none;
+    transition:.3s;
+
+}
+
+.nav-links a:hover{
+
+    color:#4DA3FF;
+
+}
+
+/* ===========================
+   Hero Section
+=========================== */
+
+.hero{
+
+    height:100vh;
+
+    display:flex;
+    justify-content:center;
+    align-items:center;
+
+    text-align:center;
+
+    padding:0 20px;
+
+    background:
+        radial-gradient(circle at top,#1F3B73,#0B0F19 70%);
+}
+
+.hero-content{
+
+    max-width:850px;
+
+}
+
+.hero h1{
+
+    font-size:64px;
+    margin-bottom:20px;
+
+}
+
+.hero p{
+
+    font-size:20px;
+    color:#BBBBBB;
+
+    margin-bottom:45px;
+
+}
+
+/* ===========================
+   Buttons
+=========================== */
+
+.buttons{
+
+    display:flex;
+    justify-content:center;
+    gap:20px;
+
+}
+
+.btn{
+
+    text-decoration:none;
+
+    padding:15px 35px;
+
+    border-radius:40px;
+
+    font-weight:600;
+
+    transition:.3s;
+
+}
+
+.primary{
+
+    background:#4DA3FF;
+    color:white;
+
+}
+
+.primary:hover{
+
+    transform:translateY(-4px);
+    box-shadow:0 0 25px #4DA3FF;
+
+}
+
+.secondary{
+
+    border:2px solid #4DA3FF;
+    color:#4DA3FF;
+
+}
+
+.secondary:hover{
+
+    background:#4DA3FF;
+    color:white;
+
+}
+
+/* ===========================
+   About Section
+=========================== */
+
+.about{
+
+    padding:120px 10%;
+
+    text-align:center;
+
+}
+
+.about h2{
+
+    font-size:42px;
+
+    margin-bottom:20px;
+
+}
+
+.about p{
+
+    color:#AAAAAA;
+
+    max-width:800px;
+    margin:auto;
+
+}
+
+.features{
+
+    display:flex;
+
+    justify-content:center;
+
+    gap:30px;
+
+    margin-top:70px;
+
+    flex-wrap:wrap;
+
+}
+
+.card{
+
+    width:280px;
+
+    background:#161B22;
+
+    padding:40px;
+
+    border-radius:20px;
+
+    transition:.3s;
+
+}
+
+.card:hover{
+
+    transform:translateY(-10px);
+
+    box-shadow:0 0 25px rgba(77,163,255,.3);
+
+}
+
+/* ===========================
+   Featured Project
+=========================== */
+
+.featured{
+
+    padding:120px 10%;
+
+}
+
+.featured h2{
+
+    text-align:center;
+    margin-bottom:50px;
+
+}
+
+.project-card{
+
+    display:flex;
+
+    background:#161B22;
+
+    border-radius:20px;
+
+    overflow:hidden;
+
+}
+
+.project-card img{
+
+    width:50%;
+    object-fit:cover;
+
+}
+
+.project-info{
+
+    padding:50px;
+
+}
+
+.project-info h3{
+
+    font-size:32px;
+
+    margin-bottom:20px;
+
+}
+
+.project-info p{
+
+    color:#AAAAAA;
+
+    margin-bottom:30px;
+
+}
+
+/* ===========================
+   Footer
+=========================== */
+
+footer{
+
+    text-align:center;
+
+    padding:30px;
+
+    color:#777;
+
+}
